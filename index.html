@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CORE AIM TRAINER</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>CORE AIM TRAINER</h1>
+    <div id="status">難易度を選んでスタート</div>
+  </header>
+  <canvas id="game" width="900" height="600" aria-label="CORE AIM TRAINER ゲーム画面"></canvas>
+  <div class="controls"><button id="bgmToggle" class="audio-btn" type="button" aria-pressed="true">♪ BGM：ON</button></div>
+  <div class="volume-panel" aria-label="音量調節">
+    <div class="volume-control">
+      <label for="bgmVolume">♪ BGM音量</label><output id="bgmVolumeValue" for="bgmVolume">30%</output>
+      <input id="bgmVolume" type="range" min="0" max="100" value="30" step="1" aria-label="BGM音量">
+    </div>
+    <div class="volume-control">
+      <label for="sfxVolume">♫ 効果音音量</label><output id="sfxVolumeValue" for="sfxVolume">100%</output>
+      <input id="sfxVolume" type="range" min="0" max="100" value="100" step="1" aria-label="効果音音量">
+    </div>
+  </div>
+  <p class="help">操作：マウスまたはタップでターゲットを撃つ。結果画面では「もう一度」でタイトルに戻れます。Escキーでもタイトルに戻れます。</p>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
